@@ -14,7 +14,7 @@ randcase = function() {
 #' @param text A character vector, of length >= 1
 #' @return A character vector of length equal to \code{text}.
 #' @export
-sarcasm = function(text) {
+sarcastic = function(text) {
     letters = strsplit(text, split = '')
     lEtTeRs = lapply(letters, FUN = function(each_vec_element){
         vec = lapply(each_vec_element, function(each_letter) {
@@ -31,6 +31,6 @@ sarcasm = function(text) {
 }
 
 #' Shorthand version of function sarcasm
-#' @inheritParams sarcasm
+#' @inheritParams sarcastic
 #' @export
-`/s` = sarcasm
+`/s` = sarcastic

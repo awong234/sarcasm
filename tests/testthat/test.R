@@ -1,4 +1,4 @@
-context("Test sarcasm function")
+context("Test sarcastic function")
 
 test_case = function(text) {
     # browser()
@@ -23,7 +23,7 @@ text_2 = c('Pythonistas', "R_users")
 
 test_that("Return is as expected", {
     set.seed(1)
-    result = sarcasm(text)
+    result = sarcastic(text)
     expect_equal(test_case(result), list(c("l", "l", "u", "u", "l", "u", "u", "u", "u", "l", "l")))
 })
 
