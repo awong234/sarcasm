@@ -26,3 +26,9 @@ text %>% `/s`
 ```
 
     ## [1] "pyThOnistaS" "r_uSERS"
+
+## Installation
+
+``` r
+remotes::install_github("https://github.com/awong234/sarcasm")
+```

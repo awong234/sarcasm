@@ -29,3 +29,8 @@ Comes with shorthand as well.
 text %>% `/s`
 ```
 
+## Installation
+
+```r
+remotes::install_github("https://github.com/awong234/sarcasm")
+```
