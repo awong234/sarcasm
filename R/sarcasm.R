@@ -27,6 +27,6 @@ sarcasm = function(text) {
     return(lEtTeRs)
 }
 
-#' Infix version of function sarcasm
+#' Shorthand version of function sarcasm
 #' @inheritParams sarcasm
 `/s` = sarcasm

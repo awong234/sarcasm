@@ -2,7 +2,7 @@
 % Please edit documentation in R/sarcasm.R
 \name{/s}
 \alias{/s}
-\title{Infix version of function sarcasm}
+\title{Shorthand version of function sarcasm}
 \usage{
 `/s`(text)
 }
@@ -10,5 +10,5 @@
 \item{text}{A character vector, of length >= 1}
 }
 \description{
-Infix version of function sarcasm
+Shorthand version of function sarcasm
 }
