@@ -32,3 +32,20 @@ text %>% `/s`
 ``` r
 remotes::install_github("https://github.com/awong234/sarcasm")
 ```
+
+# Python module
+
+There is also a python module included:
+
+``` r
+py_sarc = reticulate::import_from_path(module = 'sarcasm.sarcasm', path = 'sarc_python/')
+py_sarc$sarcastic(text)
+```
+
+    ## [1] "PyTHONisTAs" "R_Users"
+
+``` r
+py_sarc$sarcastic(py_sarc$sarcastic)
+```
+
+    ## [1] "<FUNCtiON sArcAstic at 0X0000000020A6e840>"
