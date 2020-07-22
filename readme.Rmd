@@ -1,0 +1,31 @@
+---
+output: github_document
+---
+
+# `{sarcasm}`
+
+```{r setup, include = FALSE}
+devtools::load_all()
+```
+
+
+Produces sArCaStic text from a character vector.
+
+```{r}
+set.seed(2)
+text = 'pythonistas'
+sarcasm(text)
+```
+
+```{r}
+set.seed(2)
+text = c('pythonistas', 'r_users')
+sarcasm(text)
+```
+
+Comes with shorthand as well.
+
+```{r}
+text %>% `/s`
+```
+
