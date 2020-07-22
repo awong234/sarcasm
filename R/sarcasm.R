@@ -1,3 +1,5 @@
+#' Randomly select \code{toupper} or \code{tolower}
+#' @return A function, either the definition of \code{toupper} or \code{tolower}
 randcase = function() {
     upper = as.logical(rbinom(n = 1, size = 1, prob = 0.5))
     if (upper) {
