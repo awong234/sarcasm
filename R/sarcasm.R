@@ -34,3 +34,19 @@ sarcastic = function(text) {
 #' @inheritParams sarcastic
 #' @export
 `/s` = sarcastic
+
+#' Print error messages sarcastically
+#'
+#' Errors not snarky enough for you? Print them snarkily.
+#' @param silent Boolean, prints reset instructions if TRUE
+#' @return Nothing, used for its side effect in setting options for errors.
+sarcastic_errors = function(silent = FALSE) {
+    sarc_err = function() {
+        message(sarcastic(geterrmessage()))
+    }
+    options(show.error.messages = FALSE, error = sarc_err)
+    if (! silent) {
+        message("To reset, restart your R session, or run the following:")
+        message("options(show.error.messages = TRUE, error = NULL)")
+    }
+}
