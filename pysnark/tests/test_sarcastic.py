@@ -1,4 +1,4 @@
-from sarcasm.sarcasm import split_characters, sarcastic
+from pysnark.sarcasm import split_characters, sarcastic
 
 char = 'pythonistas'
 text = ['pythonistas']
