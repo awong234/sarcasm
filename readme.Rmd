@@ -13,7 +13,7 @@ library(reticulate)
 
 knitr::knit_hooks$set(
     error = function(x, options) {
-        paste0( "<pre><code>", sarcastic(x), "</pre></code>")
+        paste0( "<pre><code><span style='color: red;'>", sarcastic(x), "<span></pre></code>")
     }
 )
 
@@ -45,8 +45,8 @@ text %>% `/s`
 
 Make a mockery of those dreadful errors.
 
-```{r err-handle, error=TRUE}
-sarcastic_errors(silent = TRUE)
+```{r err-handle, error=TRUE, message = FALSE}
+sarcastic_errors()
 A = rnorm
 A[10]
 ```

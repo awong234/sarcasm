@@ -38,13 +38,13 @@ text %>% `/s`
 Make a mockery of those dreadful errors.
 
 ``` r
-sarcastic_errors(silent = TRUE)
+sarcastic_errors()
 A = rnorm
 A[10]
 ```
 
-<pre><code>ErRoR in A[10]: OBjECT OF TyPe 'closure' Is nOt sUBsEtTabLe
-</pre>
+<pre><code><span style='color: red;'>ErRoR in A[10]: OBjECT OF TyPe 'closure' Is nOt sUBsEtTabLe
+<span></pre>
 
 </code>
 
@@ -64,11 +64,11 @@ py_sarc$sarcastic(text)
 ```
 
 ``` 
-[1] "pYtHoNIStAS" "r_USeRS"    
+[1] "PYthOnIsTaS" "R_UsErs"    
 ```
 
 ``` r
 py_sarc$sarcastic(py_sarc$sarcastic)
 ```
 
-    [1] "<FUnCTION SARCAstic At 0x0000000028452AF8>"
+    [1] "<fuNctIoN sArCAstIc AT 0x0000000028452aF8>"
