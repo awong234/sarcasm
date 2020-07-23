@@ -2,3 +2,4 @@
 
 export("/s")
 export(sarcastic)
+export(sarcastic_errors)

@@ -40,6 +40,7 @@ sarcastic = function(text) {
 #' Errors not snarky enough for you? Print them snarkily.
 #' @param silent Boolean, prints reset instructions if TRUE
 #' @return Nothing, used for its side effect in setting options for errors.
+#' @export
 sarcastic_errors = function(silent = FALSE) {
     sarc_err = function() {
         message(sarcastic(geterrmessage()))
