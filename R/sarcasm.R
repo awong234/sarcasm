@@ -27,7 +27,6 @@ sarcastic = function(text) {
     } else {
         return(as.character(lEtTeRs))
     }
-    return(lEtTeRs)
 }
 
 #' Shorthand version of function sarcasm
@@ -37,7 +36,8 @@ sarcastic = function(text) {
 
 #' Print error messages sarcastically
 #'
-#' Errors not snarky enough for you? Print them snarkily.
+#' Errors not snarky enough for you? Print them snarkily. Not recommended for
+#' non-interactive use.
 #' @param silent Boolean, prints reset instructions if TRUE
 #' @return Nothing, used for its side effect in setting options for errors.
 #' @export

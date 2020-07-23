@@ -13,5 +13,6 @@ sarcastic_errors(silent = FALSE)
 Nothing, used for its side effect in setting options for errors.
 }
 \description{
-Errors not snarky enough for you? Print them snarkily.
+Errors not snarky enough for you? Print them snarkily. Not recommended for
+non-interactive use.
 }
