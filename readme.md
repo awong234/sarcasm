@@ -59,16 +59,16 @@ remotes::install_github("https://github.com/awong234/sarcasm")
 There is also a python module included:
 
 ``` r
-py_sarc = reticulate::import_from_path(module = 'sarcasm.sarcasm', path = 'sarc_python/')
-py_sarc$sarcastic(text)
+pysnark = reticulate::import_from_path(module = 'sarcasm.sarcasm', path = 'pysnark/')
+pysnark$sarcastic(text)
 ```
 
 ``` 
-[1] "PYthOnIsTaS" "R_UsErs"    
+[1] "PYTHonISTAs" "R_users"    
 ```
 
 ``` r
-py_sarc$sarcastic(py_sarc$sarcastic)
+pysnark$sarcastic(pysnark$sarcastic)
 ```
 
-    [1] "<fuNctIoN sArCAstIc AT 0x0000000028452aF8>"
+    [1] "<FUNCTiON saRcaStIC aT 0x0000000028442AF8>"
