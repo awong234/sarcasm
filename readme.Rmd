@@ -4,10 +4,20 @@ output: github_document
 
 # `{sarcasm}`
 
+## Usage
+
 ```{r setup, include = FALSE}
 devtools::load_all()
 
 library(reticulate)
+
+knitr::knit_hooks$set(
+    error = function(x, options) {
+        paste0( "<pre><code>", sarcastic(x), "</pre></code>")
+    }
+)
+
+knitr::opts_chunk$set(comment = NULL)
 ```
 
 
@@ -30,6 +40,17 @@ Comes with shorthand as well.
 ```{r}
 text %>% `/s`
 ```
+
+## Error handler
+
+Make a mockery of those dreadful errors.
+
+```{r err-handle, error=TRUE}
+sarcastic_errors(silent = TRUE)
+A = rnorm
+A[10]
+```
+
 
 ## Installation
 

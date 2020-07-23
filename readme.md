@@ -1,6 +1,8 @@
 
 # `{sarcasm}`
 
+## Usage
+
 Produces sArCaStic text from a character vector.
 
 ``` r
@@ -9,7 +11,7 @@ text = 'pythonistas'
 sarcastic(text)
 ```
 
-    ## [1] "pYThONiStAS"
+    [1] "pYThONiStAS"
 
 ``` r
 set.seed(2)
@@ -17,7 +19,9 @@ text = c('pythonistas', 'r_users')
 sarcastic(text)
 ```
 
-    ## [1] "pYThONiStAS" "r_usERs"
+``` 
+[1] "pYThONiStAS" "r_usERs"    
+```
 
 Comes with shorthand as well.
 
@@ -25,7 +29,24 @@ Comes with shorthand as well.
 text %>% `/s`
 ```
 
-    ## [1] "pyThOnistaS" "r_uSERS"
+``` 
+[1] "pyThOnistaS" "r_uSERS"    
+```
+
+## Error handler
+
+Make a mockery of those dreadful errors.
+
+``` r
+sarcastic_errors(silent = TRUE)
+A = rnorm
+A[10]
+```
+
+<pre><code>ErRoR in A[10]: OBjECT OF TyPe 'closure' Is nOt sUBsEtTabLe
+</pre>
+
+</code>
 
 ## Installation
 
@@ -42,10 +63,12 @@ py_sarc = reticulate::import_from_path(module = 'sarcasm.sarcasm', path = 'sarc_
 py_sarc$sarcastic(text)
 ```
 
-    ## [1] "PyTHONisTAs" "R_Users"
+``` 
+[1] "pYtHoNIStAS" "r_USeRS"    
+```
 
 ``` r
 py_sarc$sarcastic(py_sarc$sarcastic)
 ```
 
-    ## [1] "<FUNCtiON sArcAstic at 0X0000000020A6e840>"
+    [1] "<FUnCTION SARCAstic At 0x0000000028452AF8>"
