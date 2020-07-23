@@ -4,11 +4,14 @@
 \alias{/s}
 \title{Shorthand version of function sarcasm}
 \usage{
-`/s`(text)
+text \%>\% `/s`
 }
 \arguments{
 \item{text}{A character vector, of length >= 1}
 }
+\value{
+A character vector of length equal to \code{text}.
+}
 \description{
-Shorthand version of function sarcasm
+Reddit-style sarcasm. Most useful after a pipe.
 }

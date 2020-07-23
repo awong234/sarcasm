@@ -13,5 +13,5 @@ sarcastic(text)
 A character vector of length equal to \code{text}.
 }
 \description{
-Generate sarcastic version of text input
+Produce a vectorized mockerized version of your input strings.
 }

@@ -11,6 +11,8 @@ randcase = function() {
 
 #' Generate sarcastic version of text input
 #'
+#' Produce a vectorized mockerized version of your input strings.
+#'
 #' @param text A character vector, of length >= 1
 #' @return A character vector of length equal to \code{text}.
 #' @export
@@ -30,7 +32,11 @@ sarcastic = function(text) {
 }
 
 #' Shorthand version of function sarcasm
-#' @inheritParams sarcastic
+#'
+#' Reddit-style sarcasm. Most useful after a pipe.
+#' @usage text \%>\% `/s`
+#' @param text A character vector, of length >= 1
+#' @return A character vector of length equal to \code{text}.
 #' @export
 `/s` = sarcastic
 
