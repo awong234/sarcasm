@@ -98,3 +98,17 @@ ridicule = function(hurt = NULL, proc = 0.1) {
            '5' = ridicule_lvl_5()
            )
 }
+
+demoralizing_errors = function(silent = FALSE) {
+    dem_error = function() {
+        ridicule_proc = getOption('ridicule_probability')
+        err = gsub(pattern = '\\n(?!.*\\n)', replacement = '. ', x = geterrmessage(), perl = TRUE)
+        message(err, appendLF = FALSE)
+        message(ridicule(proc = ridicule_proc))
+    }
+    options(show.error.messages = FALSE, error = dem_error)
+    if (! silent) {
+        message("To reset, restart your R session, or run the following:")
+        message("options(show.error.messages = TRUE, error = NULL)")
+    }
+}
