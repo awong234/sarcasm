@@ -111,5 +111,10 @@ demoralizing_errors = function(silent = FALSE) {
     if (! silent) {
         message("To reset, restart your R session, or run the following:")
         message("options(show.error.messages = TRUE, error = NULL)")
+        if (! is.null(getOption('ridicule_probability'))) {
+            message("Current ridicule probability set to ", getOption('ridicule_probability'))
+        } else {
+            message("Customize ridicule probability by setting 'ridicule_probability' option.")
+        }
     }
 }
