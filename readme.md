@@ -64,11 +64,11 @@ pysnark$sarcastic(text)
 ```
 
 ``` 
-[1] "pYthonIsTAS" "r_uSERs"    
+[1] "pyThOnIStAs" "R_USeRS"    
 ```
 
 ``` r
 pysnark$sarcastic(pysnark$sarcastic)
 ```
 
-    [1] "<funCTion SARCAStiC AT 0X000000002903d1F0>"
+    [1] "<FUNcTIoN SARCAStiC aT 0X000000002505D1f0>"
