@@ -49,7 +49,8 @@ sarcastic = function(text) {
 #' @export
 sarcastic_errors = function(silent = FALSE) {
     sarc_err = function() {
-        message(sarcastic(geterrmessage()))
+        err = gsub(pattern = '\\n(?!.*\\n)', replacement = '', x = geterrmessage(), perl = TRUE)
+        message(sarcastic(err))
     }
     options(show.error.messages = FALSE, error = sarc_err)
     if (! silent) {
