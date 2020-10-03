@@ -69,19 +69,19 @@ ridicule = function(hurt = NULL, proc = 0.1) {
     hurt = as.character(hurt)
 
     ridicule_lvl_1 = function() {
-        praise("${adjective}")
+        praise("${adjective}.")
     }
     ridicule_lvl_2 = function() {
-        sarcastic(praise("${adjective}"))
+        sarcastic(praise("${adjective}."))
     }
     ridicule_lvl_3 = function() {
-        sarcastic(praise("That was ${adjective}"))
+        sarcastic(praise("That was ${adjective}."))
     }
     ridicule_lvl_4 = function() {
-        sarcastic(praise("${exclamation}${exclamation} that was ${adverb} ${adjective}"))
+        sarcastic(praise("${exclamation}${exclamation} that was ${adverb} ${adjective}."))
     }
     ridicule_lvl_5 = function() {
-        sarcastic(praise("${exclamation} ${exclamation} ${exclamation} you're a ${adjective} coder"))
+        sarcastic(praise("${exclamation} ${exclamation} ${exclamation} you're a ${adjective} coder."))
     }
 
     n = 6
