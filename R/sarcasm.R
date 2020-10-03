@@ -102,6 +102,7 @@ ridicule = function(hurt = NULL, proc = 0.1) {
 demoralizing_errors = function(silent = FALSE) {
     dem_error = function() {
         ridicule_proc = getOption('ridicule_probability')
+        if (is.null(ridicule_proc)) ridicule_proc = 0.1
         err = gsub(pattern = '\\n(?!.*\\n)', replacement = '. ', x = geterrmessage(), perl = TRUE)
         message(err, appendLF = FALSE)
         message(ridicule(proc = ridicule_proc))
