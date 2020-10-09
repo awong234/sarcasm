@@ -65,37 +65,18 @@ sarcastic_errors = function(silent = FALSE) {
 #' @return Ridicule, lowers self-esteem
 #' @importFrom praise praise
 ridicule = function(hurt = NULL, proc = 0.1) {
-
     hurt = as.character(hurt)
-
-    ridicule_lvl_1 = function() {
-        praise("${adjective}.")
-    }
-    ridicule_lvl_2 = function() {
-        sarcastic(praise("${adjective}."))
-    }
-    ridicule_lvl_3 = function() {
-        sarcastic(praise("That was ${adjective}."))
-    }
-    ridicule_lvl_4 = function() {
-        sarcastic(praise("${exclamation}${exclamation} that was ${adverb} ${adjective}."))
-    }
-    ridicule_lvl_5 = function() {
-        sarcastic(praise("${exclamation} ${exclamation} ${exclamation} you're a ${adjective} coder."))
-    }
-
     n = 6
-
     if (! is.null(hurt)) {
         hurt = as.character(sample(seq(0,5), size = 1, prob = c(1-proc, rep(proc/(n-1), (n-1)))))
     }
     switch(hurt,
            '0' = invisible(NULL),
-           '1' = ridicule_lvl_1(),
-           '2' = ridicule_lvl_2(),
-           '3' = ridicule_lvl_3(),
-           '4' = ridicule_lvl_4(),
-           '5' = ridicule_lvl_5()
+           '1' = praise("${adjective}."),
+           '2' = sarcastic(praise("${adjective}.")),
+           '3' = sarcastic(praise("That was ${adjective}.")),
+           '4' = sarcastic(praise("${exclamation}${exclamation} that was ${adverb} ${adjective}.")),
+           '5' = sarcastic(praise("${exclamation} ${exclamation} ${exclamation} you're a ${adjective} coder."))
            )
 }
 
