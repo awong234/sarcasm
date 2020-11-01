@@ -3,91 +3,49 @@ options('ridicule_probability' = 1)
 sarcastic_errors()
 a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
+a[10]
+a[10]
+a[10]
+a[10]
 a[10]
 
 demoralizing_errors()
 a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
 a[10]
-a = matrix
-a[10]
-a = matrix
-a[10]
-a = matrix
-a[10]
-a = matrix
-a[10]
-a = matrix
 a[10]
