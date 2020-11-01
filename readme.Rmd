@@ -43,13 +43,31 @@ text %>% `/s`
 
 ## Error handler
 
-Make a mockery of those dreadful errors.
+Make a mockery of those dreadful errors:
 
 ```{r err-handle, error=TRUE, message = FALSE}
 sarcastic_errors()
 A = rnorm
 A[10]
 ```
+
+Prank your friends by placing this in their `.Rprofile`:
+
+```{r ridicule-err, error = TRUE, message = FALSE, eval = FALSE}
+options(ridicule_probability = 1)
+demoralizing_errors(silent = TRUE)
+A[10]
+```
+
+<pre><code><span style='color: red;'>
+Error in A[10] : object of type 'closure' is not subsettable. HuZzah Wow WeE YoU'Re a wEll-mAdE cOdEr.
+<span></pre></code>
+
+
+
+The function makes use of and corrupts the `praise` package to offer mockery
+after errors are encountered, optionally with probability specified in the
+options to make it an unexpected surprise.
 
 
 ## Installation
