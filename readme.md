@@ -40,8 +40,7 @@ A[10]
 ```
 
 <pre><code><span style='color: red;'>ErRoR in A[10]: OBjECT OF TyPe 'closure' Is nOt sUBsEtTabLe
-<span></pre>
-</code>
+<span></pre></code>
 
 Prank your friends by placing this in their `.Rprofile`:
 
@@ -53,8 +52,7 @@ A[10]
 
 <pre><code><span style='color: red;'>
 Error in A[10] : object of type 'closure' is not subsettable. HuZzah Wow WeE YoU'Re a wEll-mAdE cOdEr.
-<span></pre>
-</code>
+<span></pre></code>
 
 The function makes use of and corrupts the `praise` package to offer
 mockery after errors are encountered, optionally with probability
