@@ -4,7 +4,7 @@
 \alias{ridicule}
 \title{Ridicule}
 \usage{
-ridicule(hurt = 1)
+ridicule(hurt = NULL, proc = 0.1)
 }
 \value{
 Ridicule, lowers self-esteem
