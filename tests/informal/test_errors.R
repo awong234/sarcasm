@@ -1,5 +1,3 @@
-options('ridicule_probability' = 1)
-
 sarcastic_errors()
 a = matrix
 a[10]
@@ -18,6 +16,7 @@ a[10]
 a[10]
 a[10]
 
+options('ridicule_probability' = 1)
 demoralizing_errors()
 a = matrix
 a[10]
