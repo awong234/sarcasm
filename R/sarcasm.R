@@ -67,12 +67,12 @@ sarcastic_errors = function(silent = FALSE) {
 ridicule = function(hurt = NULL, proc = 0.1) {
     hurt = as.character(hurt)
     n = 6
-    if (! is.null(hurt)) {
+    if (is.null(hurt)) {
         hurt = as.character(sample(seq(0,5), size = 1, prob = c(1-proc, rep(proc/(n-1), (n-1)))))
     }
     switch(hurt,
            '0' = invisible(NULL),
-           '1' = praise("${adjective}."),
+           '1' = praise("${adjective}, your computer remarked, in annoyance."),
            '2' = sarcastic(praise("${adjective}.")),
            '3' = sarcastic(praise("That was ${adjective}.")),
            '4' = sarcastic(praise("${exclamation}${exclamation} that was ${adverb} ${adjective}.")),
