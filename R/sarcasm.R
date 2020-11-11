@@ -65,10 +65,11 @@ sarcastic_errors = function(silent = FALSE) {
 #' @return Ridicule, lowers self-esteem
 #' @importFrom praise praise
 ridicule = function(hurt = NULL, proc = 0.1) {
-    hurt = as.character(hurt)
     n = 6
     if (is.null(hurt)) {
         hurt = as.character(sample(seq(0,5), size = 1, prob = c(1-proc, rep(proc/(n-1), (n-1)))))
+    } else {
+        hurt = as.character(sample(c(0,hurt), size = 1, prob = c(1-proc, proc)))
     }
     switch(hurt,
            '0' = invisible(NULL),
