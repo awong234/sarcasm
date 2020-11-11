@@ -1,7 +1,7 @@
 Package: sarcasm
 Type: Package
 Title: Sarcasm Generator
-Version: 0.1.1
+Version: 0.1.2
 Author: Alec Wong
 Maintainer: Alec Wong <alecwong@live.com>
 Description: Create sarcasm meme text using R.
