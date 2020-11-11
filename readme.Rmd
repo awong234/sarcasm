@@ -2,7 +2,7 @@
 output: github_document
 ---
 
-# `{sarcasm}`
+# `{sarcasm}` <img src='img/saracasm_hex.png' align="right" height="139"/>
 
 ## Usage
 

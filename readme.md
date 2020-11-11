@@ -1,5 +1,5 @@
 
-# `{sarcasm}`
+# `{sarcasm}` <img src='img/saracasm_hex.png' align="right" height="139"/>
 
 ## Usage
 
@@ -19,7 +19,7 @@ text = c('pythonistas', 'r_users')
 sarcastic(text)
 ```
 
-    [1] "pYThONiStAS" "r_usERs"
+    [1] "pYThONiStAS" "r_usERs"    
 
 Comes with shorthand as well.
 
@@ -27,7 +27,7 @@ Comes with shorthand as well.
 text %>% `/s`
 ```
 
-    [1] "pyThOnistaS" "r_uSERS"
+    [1] "pyThOnistaS" "r_uSERS"    
 
 ## Error handler
 
@@ -40,7 +40,9 @@ A[10]
 ```
 
 <pre><code><span style='color: red;'>ErRoR in A[10]: OBjECT OF TyPe 'closure' Is nOt sUBsEtTabLe
-<span></pre></code>
+<span></pre>
+
+</code>
 
 Prank your friends by placing this in their `.Rprofile`:
 
@@ -52,7 +54,9 @@ A[10]
 
 <pre><code><span style='color: red;'>
 Error in A[10] : object of type 'closure' is not subsettable. HuZzah Wow WeE YoU'Re a wEll-mAdE cOdEr.
-<span></pre></code>
+<span></pre>
+
+</code>
 
 The function makes use of and corrupts the `praise` package to offer
 mockery after errors are encountered, optionally with probability
@@ -73,10 +77,10 @@ pysnark = reticulate::import_from_path(module = 'pysnark.sarcasm', path = system
 pysnark$sarcastic(text)
 ```
 
-    [1] "pYthonISTas" "R_usErs"
+    [1] "pythOnIsTas" "r_uSeRs"    
 
 ``` r
 pysnark$sarcastic(pysnark$sarcastic)
 ```
 
-    [1] "<FunCTiOn sARcasTIc AT 0X00000000250bd1f0>"
+    [1] "<FuncTIOn sArCaSTiC AT 0X00000000250dD1F0>"
