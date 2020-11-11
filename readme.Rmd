@@ -43,7 +43,7 @@ text %>% `/s`
 
 ## Error handler
 
-Make a mockery of those dreadful errors:
+Mocking errors:
 
 ```{r err-handle, error=TRUE, message = FALSE}
 sarcastic_errors()
