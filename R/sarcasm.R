@@ -73,8 +73,8 @@ ridicule = function(hurt = NULL, proc = 0.1) {
     }
     switch(hurt,
            '0' = invisible(NULL),
-           '1' = praise("${adjective}, your computer remarked, in annoyance."),
-           '2' = sarcastic(praise("${adjective}.")),
+           '1' = sarcastic(praise("${adjective} job.")),
+           '2' = sarcastic(praise("I've never seen anything so ${adjective}.")),
            '3' = sarcastic(praise("That was ${adjective}.")),
            '4' = sarcastic(praise("${exclamation}${exclamation} that was ${adverb} ${adjective}.")),
            '5' = sarcastic(praise("${exclamation} ${exclamation} ${exclamation} you're a ${adjective} coder."))
